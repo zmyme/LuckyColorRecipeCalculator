@@ -132,7 +132,7 @@ if __name__ == '__main__':
                 if len(luckycolor) < 3 or len(luckycolor) > 4:
                     raise ValueError
                 if len(luckycolor) == 4:
-                    max_step = luckycolor[3]
+                    max_step = int(luckycolor[3])
                     luckycolor = luckycolor[:3]
             except Exception:
                 print('幸运色颜色格式错误qwq')
