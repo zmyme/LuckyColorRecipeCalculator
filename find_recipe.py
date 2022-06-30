@@ -1,4 +1,3 @@
-from base64 import decode
 from utils import load_dict
 from colors import colors, colornames, decode_color
 import math

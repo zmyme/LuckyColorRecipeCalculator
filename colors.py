@@ -1,7 +1,3 @@
-from base64 import decode, encode
-from torch import full
-
-
 mc_colors = [
     ['红色染料',   '#B02E26', 'red'],
     ['绿色染料',   '#5E7C16', 'green'],
