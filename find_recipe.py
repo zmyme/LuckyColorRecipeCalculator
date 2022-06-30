@@ -19,7 +19,7 @@ def find_closest_color(cache, color, max_step=-1):
     min_dist = 10000
     closest_color = None
     for name, this_color in cache.items():
-        if max_step > 0 and this_color['step'] > max_step:
+        if max_step > 0 and int(this_color['step']) > max_step:
             continue
         this_dist = color_distance(color, this_color['color'])
         if this_dist < min_dist:
@@ -132,7 +132,7 @@ if __name__ == '__main__':
                 if len(luckycolor) < 3 or len(luckycolor) > 4:
                     raise ValueError
                 if len(luckycolor) == 4:
-                    max_step = int(luckycolor[3])
+                    max_step = luckycolor[3]
                     luckycolor = luckycolor[:3]
             except Exception:
                 print('幸运色颜色格式错误qwq')
